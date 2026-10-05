@@ -1,0 +1,22 @@
+# Make source/launcher endings predictable across Windows, macOS, and Linux.
+* text=auto eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+*.bat text eol=crlf
+LICENSE text eol=lf
+templates/linux/squashfs-root/AppRun text eol=lf
+
+# Binary runtimes/archives must stay byte-for-byte identical in Git.
+*.exe binary
+*.dll binary
+*.zip binary
+*.ico binary
+*.png binary
+*.so binary
+*.so.* binary
+templates/linux/squashfs-root/bin/love binary
+
+# Vendor files/notices stay EXACT, including original whitespace/line endings.
+templates/** -text

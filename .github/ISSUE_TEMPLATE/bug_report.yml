@@ -1,0 +1,24 @@
+name: Bug report
+description: Report an exporter or generated-package issue
+body:
+  - type: markdown
+    attributes:
+      value: "Do not post secrets, private game files, or unredacted personal paths."
+  - type: input
+    id: version
+    attributes:
+      label: Exporter version
+      description: Shown in About / License.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps, target platform, expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: report
+    attributes:
+      label: Build report (redact personal paths)
+      description: Use Build Center → Copy report. Include OS/version and failed target.

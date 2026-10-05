@@ -1,0 +1,40 @@
+# Python / editor-local state
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+.vscode/
+.idea/
+.codex/
+.agents/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Generated builds, logs, and test games are NOT public source.
+/build/
+/dist/
+/verification/
+*.spec
+*.log
+/.export-test-*/
+/.worker-test-*/
+/.gui-test-*/
+/.source-check-*/
+*_Builds/
+
+# Keep canonical templates, ignore duplicate downloaded/extracted copies.
+/templates/love-11.5-win64.zip
+/templates/love-11.5-macos/
+/templates/linux/*.AppImage
+/templates/love-11.5-win64/love-11.5-win64/game.ico
+
+# OS debris
+.DS_Store
+Thumbs.db
+desktop.ini
